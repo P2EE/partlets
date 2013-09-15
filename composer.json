@@ -1,0 +1,26 @@
+{
+    "name": "p2ee/partlets",
+    "description": "Base package for the partlet hmvc system",
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Holzhauer",
+            "email": "martin@holzhauer.eu"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.0",
+        "p2ee/preparables": "dev-master",
+        "rg/injektor": "v1.0.0"
+    },
+    "autoload": {
+        "psr-0": {"p2ee\\": "src/"}
+    },
+    "config" : {
+        "bin-dir" : "vendor/bin/"
+    }
+}
