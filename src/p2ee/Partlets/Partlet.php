@@ -77,7 +77,8 @@ abstract class Partlet implements Preparable {
 
     protected function getBaseName() {
         $this->getModuleName();
-        return array_pop(explode('\\', static::class));
+        $parts = explode('\\', static::class);
+        return array_pop($parts);
     }
 
     protected function getModuleName() {
