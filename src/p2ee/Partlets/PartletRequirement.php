@@ -33,4 +33,8 @@ class PartletRequirement extends Requirement {
     public function isCacheable() {
         return false;
     }
-} 
+
+    public function getCacheKey() {
+        return null;
+    }
+}
