@@ -26,11 +26,10 @@ class PartletResolver implements Resolver {
 
     /**
      * @param Requirement $requirement
-     * @param Preparer $preparer
      * @throws \Exception
      * @return Partlet
      */
-    public function resolve(Requirement $requirement, Preparer $preparer) {
+    public function resolve(Requirement $requirement) {
         if (!($requirement instanceof PartletRequirement)) {
             throw new \Exception('invalid requirement type for PartletResolver');
         }
@@ -40,8 +39,6 @@ class PartletResolver implements Resolver {
         if (!($partlet instanceof Partlet)) {
             throw new \Exception('given class is not a Partlet');
         }
-
-        $preparer->prepare($partlet, $requirement->getPrefills());
         return $partlet;
     }
 
