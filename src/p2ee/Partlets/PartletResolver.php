@@ -1,7 +1,6 @@
 <?php
 namespace p2ee\Partlets;
 
-use p2ee\Preparables\Preparer;
 use p2ee\Preparables\Requirement;
 use p2ee\Preparables\Resolver;
 use rg\injektor\DependencyInjectionContainer;
