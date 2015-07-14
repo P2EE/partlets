@@ -18,7 +18,7 @@
         "rg/injektor": ">=1.2.0,<2.0.0-dev"
     },
     "autoload": {
-        "psr-0": {"p2ee\\": "src/"}
+        "psr-4": {"p2ee\\Partlets\\": "src/p2ee/Partlets/"}
     },
     "config" : {
         "bin-dir" : "vendor/bin/"
