@@ -14,7 +14,7 @@ You can define all you requirements you need to display the content of a page.
 HMVC Like
 ---------
 
-The strentgh of partlets are the "Preparable" base, so that they can define requirements.
+The strength of partlets are the "Preparable" base, so that they can define requirements.
 A requirement can be another partlet, so that you can build a single page out of different
 self contained and reusable blocks.
 
